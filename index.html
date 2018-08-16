@@ -1,2 +1,480 @@
-Hello World
-.
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Jogli Kipkoech - Full-Stack Engineer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site Description Here">
+        <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/stack-interface.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/socicon.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/flickity.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/iconsmind.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/jquery.steps.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/theme.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/custom.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="css/font-rubiklato.css" rel="stylesheet" type="text/css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:200,300,400,400i,500,600,700%7CMerriweather:300,300i" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700%7CRubik:300,400,500" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body class=" ">
+        <a id="start"></a>
+        <div class="notification pos-right pos-top side-menu bg--white" data-notification-link="side-menu" data-animation="from-right">
+            <div class="side-menu__module">
+                <a class="btn btn--icon bg--facebook block" href="#">
+                    <span class="btn__text">
+                        <i class="socicon-facebook"></i>
+                        Sign up with Facebook
+                    </span>
+                </a>
+                <a class="btn btn--icon bg--dark block" href="#">
+                    <span class="btn__text">
+                        <i class="socicon-mail"></i>
+                        Sign up with Email
+                    </span>
+                </a>
+            </div>
+            <!--end module-->
+            <hr>
+            <div class="side-menu__module">
+                <span class="type--fine-print float-left">Already have an account?</span>
+                <a class="btn type--uppercase float-right" href="#">
+                    <span class="btn__text">Login</span>
+                </a>
+            </div>
+            <!--end module-->
+            <hr>
+            <div class="side-menu__module">
+                <ul class="list--loose list--hover">
+                    <li>
+                        <a href="#">
+                            <span class="h5">About Stack</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="h5">Careers</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="h5">Investors</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="h5">Locations</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <span class="h5">Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!--end module-->
+            <hr>
+            <div class="side-menu__module">
+                <ul class="social-list list-inline list--hover">
+                    <li>
+                        <a href="#">
+                            <i class="socicon socicon-google icon icon--xs"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="socicon socicon-twitter icon icon--xs"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="socicon socicon-facebook icon icon--xs"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="socicon socicon-instagram icon icon--xs"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="socicon socicon-pinterest icon icon--xs"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="notification pos-top pos-right search-box bg--white border--bottom" data-animation="from-top" data-notification-link="search-box">
+            <form>
+                <div class="row">
+                    <div class="col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+                        <input type="search" name="query" placeholder="Type search query and hit enter" />
+                    </div>
+                </div>
+                <!--end of row-->
+            </form>
+        </div>
+        <!--end of notification-->
+        <div class="nav-container ">
+            <div class="bar bar--sm visible-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-3 col-sm-2">
+                            <a href="index.html">
+                                <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
+                                <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
+                            </a>
+                        </div>
+                        <div class="col-xs-9 col-sm-10 text-right">
+                            <a href="#" class="hamburger-toggle" data-toggle-class="#menu1;hidden-xs">
+                                <i class="icon icon--sm stack-interface stack-menu"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </div>
+            <!--end bar-->
+            <nav id="menu1" class="bar bar--sm bar-1 hidden-xs bar--absolute">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-1 col-sm-2 hidden-xs">
+                            <div class="bar__module">
+                                <a href="index.html">
+                                    <img class="logo logo-dark" alt="logo" src="img/logo-dark.png" />
+                                    <img class="logo logo-light" alt="logo" src="img/logo-light.png" />
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                        <div class="col-md-11 col-sm-12 text-right text-left-xs text-left-sm">
+                            <!--end module-->
+                            <div class="bar__module">
+                                <a class="btn btn--sm type--uppercase" target="_blank" href="http://twitter.com/joglikip">
+                                    <span class="btn__text">
+                                        <i class="socicon socicon-twitter icon icon--xs"></i> Twitter
+                                    </span>
+                                </a>
+                                <a class="btn btn--sm btn--primary type--uppercase" target="_blank" href="https://ke.linkedin.com/in/jogli-kipkoech-0686388b">
+                                    <span class="btn__text">
+                                        <i class="socicon socicon-linkedin  icon icon--xs"></i> Linkedin
+                                    </span>
+                                </a>
+                            </div>
+                            <!--end module-->
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </nav>
+            <!--end bar-->
+        </div>
+        <div class="main-container">
+            <section class="cover unpad--bottom switchable bg--secondary text-center-xs">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-5 mt--3">
+                            <h1>
+                                Full-Stack Engineer
+                            </h1>
+                            <p class="lead">
+                                <i class="socicon socicon-telegram icon icon--xs"></i> +254 729 553 498
+                                <br/>
+                                <a href="mailto:jogikibii@gmail.com">joglikibii@gmail.com</a>
+                                <br/>
+                                <a href="https://api.whatsapp.com/send?phone=254729553498" target="_blank">
+                                    <i class="socicon socicon-whatsapp icon icon--xs"></i>
+                                </a>
+                                &nbsp;&nbsp;
+                                <a href="https://skype.com/joglikibii" target="_blank">
+                                    <i class="socicon socicon-skype icon icon--xs"></i>
+                                </a>
+                                &nbsp;&nbsp;
+                                <a href="https://github.com/joglikibii" target="_blank">
+                                    <i class="socicon socicon-github icon icon--xs"></i>
+                                </a>
+                                &nbsp;&nbsp;
+                                <a href="https://ke.linkedin.com/in/jogli-kipkoech-0686388b" target="_blank">
+                                    <i class="socicon socicon-linkedin icon icon--xs"></i>
+                                </a>
+                                &nbsp;
+                                <a href="https://angellist.com/joglikibii" target="_blank">
+                                    <i class="socicon socicon-angellist icon icon--xs"></i>
+                                </a>
+                            </p>
+                            <!--<a class="btn btn&#45;&#45;primary type&#45;&#45;uppercase" href="#">-->
+                                <!--<span class="btn__text">-->
+                                    <!--Try Builder Live-->
+                                <!--</span>-->
+                            <!--</a>-->
+                            <!--<span class="block type&#45;&#45;fine-print">or-->
+                                <!--<a href="index.html">view the demos</a>-->
+                            <!--</span>-->
+                        </div>
+                        <div class="col-sm-6">
+                            <img alt="Image" src="img/front.jpg" />
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <section>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-7 col-md-7">
+                            <h2>About Me.</h2>
+                            <p class="lead">
+                              Jogli is an experienced Full-Stack Software Engineer with a demonstrated history of working with the web. He has over 3 Years hands-on experience and over time gained
+                                 skills and expertise in PHP Frameworks, SQL, JavaScript, Web Applications and building Robust re-usable RESTful APIs.
+                            </p>
+                            <p class="lead">
+                              A strong Software Engineering professional with a Certification in CISCO networking, a Bachelors Degree in Mathematics and Computer Science from The University
+                                of Eldoret and a major interest in the WEB and building apps for the web.
+                            </p>
+                        </div>
+                        <div class="col-sm-5">
+                            <h2>Skill Set.</h2>
+                            <div class="progress-horizontal progress-horizontal--lg">
+                                <span class="progress-horizontal__label text-success h5">PHP (Laravel): Expert
+                                <div class="progress-horizontal__bar" data-value="97"></div></span>
+
+                            </div>
+                            <div class="progress-horizontal progress-horizontal--lg">
+                                <span class="progress-horizontal__label text-success h5">JavaScript, AngularJS, ReactJS VueJS: Expert
+                                <div class="progress-horizontal__bar" data-value="97"></div></span>
+
+                            </div>
+                            <div class="progress-horizontal progress-horizontal--lg">
+                                <span class="progress-horizontal__label text-success h5">AJAX, JQuery: Expert
+                                <div class="progress-horizontal__bar" data-value="97"></div></span>
+
+                            </div>
+                            <div class="progress-horizontal progress-horizontal--lg">
+                                <span class="progress-horizontal__label text-success h5">Git: Expert
+                                <div class="progress-horizontal__bar" data-value="97"></div></span>
+
+                            </div>
+                            <div class="progress-horizontal progress-horizontal--lg">
+                                <span class="progress-horizontal__label text-success h5">HTML5, CSS3, SASS & LESS: Expert
+                                <div class="progress-horizontal__bar" data-value="97"></div></span>
+                            </div>
+                            <div class="progress-horizontal progress-horizontal--lg">
+                                <span class="progress-horizontal__label text-success h5">Testing: Expert
+                                <div class="progress-horizontal__bar" data-value="97"></div></span>
+                            </div>
+                            <div class="progress-horizontal progress-horizontal--lg">
+                                <span class="progress-horizontal__label text-success h5">Database: Expert
+                                <div class="progress-horizontal__bar" data-value="97"></div></span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <div class="tab__content">
+                <section class="text-center bg--secondary">
+                    <div class="container"><h2>Sample Projects</h2>
+                        <div class="row">
+                            <div class="col-sm-4">
+
+                                <div class="feature feature-1">
+                                    <img alt="Image" height="100px" src="img/tozza.png" />
+                                    <div class="feature__body boxed boxed--lg boxed--border">
+                                        <h3>TozzaPlus</h3>
+                                        <p class="lead">
+                                            An ERP system for SMEs in East & Central Africa.
+                                        </p>
+                                        <a href="https://tozzaplus.com">
+                                            Learn More
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--end feature-->
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="feature feature-1">
+                                    <img alt="Image" height="100px" src="img/smsafrica.png" />
+                                    <div class="feature__body boxed boxed--lg boxed--border">
+                                        <h3>SMS Africa</h3>
+                                        <p class="lead">
+                                           An Enterprise Bulk SMS Platform for Businesses in Africa.
+                                        </p>
+                                        <a href="http://smsafrica.tech">
+                                            Learn More
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--end feature-->
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="feature feature-1">
+                                    <img alt="Image" height="100px" src="img/afrimobi.png" />
+                                    <div class="feature__body boxed boxed--lg boxed--border">
+                                        <h3>Afrimobi</h3>
+                                        <p class="lead">
+                                            An Enterprise Bulk SMS Platform with continental coverage.
+                                        </p>
+                                        <a href="http://afrimobi.co.ke">
+                                            Learn More
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--end feature-->
+                            </div>
+                        </div>
+                        <!--end of row-->
+                    </div>
+                    <!--end of container-->
+                    <div class="tab__content">
+                        <section class="text-center bg--secondary">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <div class="feature feature-1">
+                                            <img alt="Image" height="100px" src="img/peak.png" />
+                                            <div class="feature__body boxed boxed--lg boxed--border">
+                                                <h3>Peak Quality Essays</h3>
+                                                <p class="lead">
+                                                    Academic papers Freelance System.
+                                                </p>
+                                                <a href="http://academicresearchessays.com">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!--end feature-->
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="feature feature-1">
+                                            <img alt="Image" src="img/wezasms.png" />
+                                            <div class="feature__body boxed boxed--lg boxed--border">
+                                                <h3>Weza Short Message Service</h3>
+                                                <p class="lead">
+                                                    An Enterprise Bulk SMS Platform.
+                                                </p>
+                                                <a href="https://wezasms.com">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!--end feature-->
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <div class="feature feature-1">
+                                            <img alt="Image" src="img/uready4.png" />
+                                            <div class="feature__body boxed boxed--lg boxed--border">
+                                                <h3>Uready Africa Learning Management System</h3>
+                                                <p class="lead">
+                                                    A learning management system for African students.
+                                                </p>
+                                                <a href="https://ureadyafrica.com">
+                                                    Learn More
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!--end feature-->
+                                    </div>
+                                </div>
+                                <!--end of row-->
+                            </div>
+                            <!--end of container-->
+                        </section>
+                    </div>
+                </section>
+            </div>
+            <section class="text-center imagebg" data-gradient-bg='#4876BD,#5448BD,#8F48BD,#BD48B1'>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-8 col-md-6">
+                            <div class="cta">
+                                <h2>" Favourite Quote "</h2>
+                                <p class="lead">
+                                    Tell me and I forget. Teach me and I remember. Involve me and I will learn.
+                                </p>
+                                <a class="btn btn--primary type--uppercase">
+                                    <span class="btn__text">
+                                        Benjamin Franklin
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </section>
+            <footer class="footer-7 text-center-xs  imagebg" data-overlay='4'>
+                <div class="background-image-holder">
+                    <img alt="background" src="img/hero-1.jpg" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <span class="type--fine-print"> &copy; &nbsp;
+                                <span class="update-year"></span>&nbsp;<img class="logo logo-dark" alt="logo" src="img/logo-light.png" />  &mdash; Some Rights Reserved</span>
+                        </div>
+                        <div class="col-sm-6 text-right text-center-xs">
+                            <ul class="social-list list-inline">
+                                <li>
+                                    <a href="https://api.whatsapp.com/send?phone=254729553498" target="_blank">
+                                        <i class="socicon socicon-whatsapp icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <i class="socicon socicon-google icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://twitter.com/joglikip" target="_blank">
+                                        <i class="socicon socicon-twitter icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://facebook.com/jogli.kipkoetch" target="_blank">
+                                        <i class="socicon socicon-facebook icon icon--xs"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://instagram.com/joglikip" target="_blank">
+                                        <i class="socicon socicon-instagram icon icon--xs"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!--end of row-->
+                </div>
+                <!--end of container-->
+            </footer>
+        </div>
+        <!--<div class="loader"></div>-->
+        <a class="back-to-top inner-link" href="#start" data-scroll-class="100vh:active">
+            <i class="stack-interface stack-up-open-big"></i>
+        </a>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/flickity.min.js"></script>
+        <script src="js/easypiechart.min.js"></script>
+        <script src="js/parallax.js"></script>
+        <script src="js/typed.min.js"></script>
+        <script src="js/datepicker.js"></script>
+        <script src="js/isotope.min.js"></script>
+        <script src="js/ytplayer.min.js"></script>
+        <script src="js/lightbox.min.js"></script>
+        <script src="js/granim.min.js"></script>
+        <script src="js/jquery.steps.min.js"></script>
+        <script src="js/countdown.min.js"></script>
+        <script src="js/twitterfetcher.min.js"></script>
+        <script src="js/spectragram.min.js"></script>
+        <script src="js/smooth-scroll.min.js"></script>
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
